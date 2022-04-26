@@ -1,0 +1,33 @@
+-------------------------------------------------------------------------------
+Test set: com.musala.dronetask.controllers.DroneControllerTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 4, Errors: 1, Skipped: 0, Time elapsed: 0.074 s <<< FAILURE! - in com.musala.dronetask.controllers.DroneControllerTest
+register  Time elapsed: 0.046 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.musala.dronetask.controllers.DroneController.register(com.musala.dronetask.dto.DroneDTO)" because "this.controller" is null
+	at com.musala.dronetask.controllers.DroneControllerTest.register(DroneControllerTest.java:39)
+
+dronesAvailable  Time elapsed: 0.007 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception thrown: java.lang.NullPointerException: Cannot invoke "com.musala.dronetask.controllers.DroneController.dronesAvailable()" because "this.controller" is null
+	at com.musala.dronetask.controllers.DroneControllerTest.dronesAvailable(DroneControllerTest.java:61)
+Caused by: java.lang.NullPointerException: Cannot invoke "com.musala.dronetask.controllers.DroneController.dronesAvailable()" because "this.controller" is null
+	at com.musala.dronetask.controllers.DroneControllerTest.lambda$dronesAvailable$1(DroneControllerTest.java:62)
+	at com.musala.dronetask.controllers.DroneControllerTest.dronesAvailable(DroneControllerTest.java:61)
+
+contextLoads  Time elapsed: 0.002 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: not <null>
+	at com.musala.dronetask.controllers.DroneControllerTest.contextLoads(DroneControllerTest.java:33)
+
+loadDrone  Time elapsed: 0.004 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception thrown: java.lang.NullPointerException: Cannot invoke "com.musala.dronetask.controllers.DroneController.loadDrone(long, com.musala.dronetask.dto.MedicationDTO)" because "this.controller" is null
+	at com.musala.dronetask.controllers.DroneControllerTest.loadDrone(DroneControllerTest.java:49)
+Caused by: java.lang.NullPointerException: Cannot invoke "com.musala.dronetask.controllers.DroneController.loadDrone(long, com.musala.dronetask.dto.MedicationDTO)" because "this.controller" is null
+	at com.musala.dronetask.controllers.DroneControllerTest.lambda$loadDrone$0(DroneControllerTest.java:50)
+	at com.musala.dronetask.controllers.DroneControllerTest.loadDrone(DroneControllerTest.java:49)
+
+getDrone  Time elapsed: 0.002 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception thrown: java.lang.NullPointerException: Cannot invoke "com.musala.dronetask.controllers.DroneController.getDrone(long)" because "this.controller" is null
+	at com.musala.dronetask.controllers.DroneControllerTest.getDrone(DroneControllerTest.java:72)
+Caused by: java.lang.NullPointerException: Cannot invoke "com.musala.dronetask.controllers.DroneController.getDrone(long)" because "this.controller" is null
+	at com.musala.dronetask.controllers.DroneControllerTest.lambda$getDrone$2(DroneControllerTest.java:73)
+	at com.musala.dronetask.controllers.DroneControllerTest.getDrone(DroneControllerTest.java:72)
+
